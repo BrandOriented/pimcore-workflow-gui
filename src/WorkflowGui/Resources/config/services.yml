@@ -16,6 +16,7 @@ services:
             - '@Youwe\Pimcore\WorkflowGui\Resolver\ConfigFileResolver'
             - '@kernel'
             - '@Pimcore\Cache\Symfony\CacheClearer'
+            - 'security.helpe'
         tags:
             - { name: controller.service_arguments }
         calls:
