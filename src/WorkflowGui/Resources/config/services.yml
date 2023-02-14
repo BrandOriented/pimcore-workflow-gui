@@ -19,4 +19,4 @@ services:
         tags:
             - { name: controller.service_arguments }
         calls:
-            - { method: setContainer, arguments: [ '@service_container', '@security.helper' ] }
+            - { method: setContainer, arguments: [ '@service_container', '@security.helper', '@security.token_storage' ] }
