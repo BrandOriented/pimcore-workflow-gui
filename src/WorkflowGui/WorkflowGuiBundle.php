@@ -27,7 +27,7 @@ class WorkflowGuiBundle extends AbstractPimcoreBundle
         return 'youwe/workflow-gui';
     }
 
-    public function getNiceName()
+    public function getNiceName(): string
     {
         return 'Workflow GUI';
     }
