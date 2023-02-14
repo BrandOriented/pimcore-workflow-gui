@@ -11,6 +11,8 @@ services:
             - '@Youwe\Pimcore\WorkflowGui\Resolver\ConfigFileResolver'
 
     Youwe\Pimcore\WorkflowGui\Controller\WorkflowController:
+        autowire: true
+        autoconfigure: true
         arguments:
             - '@Youwe\Pimcore\WorkflowGui\Repository\WorkflowRepository'
             - '@Youwe\Pimcore\WorkflowGui\Resolver\ConfigFileResolver'
