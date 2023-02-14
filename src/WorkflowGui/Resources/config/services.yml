@@ -18,6 +18,5 @@ services:
             - '@Pimcore\Cache\Symfony\CacheClearer'
         tags:
             - { name: controller.service_arguments }
-            - { name: container.service_subscriber, id: 'security.helper' }
         calls:
-            - { method: setContainer, arguments: [ '@service_container' ] }
+            - { method: setContainer, arguments: [ '@service_container', '@security.helper' ] }
