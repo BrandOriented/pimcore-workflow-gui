@@ -38,7 +38,7 @@ class WorkflowGuiBundle extends AbstractPimcoreBundle
         return 'Provides a Graphical User Interface to define Pimcore Workflows';
     }
 
-    public function getInstaller(): ?Installer\InstallerInterface
+    public function getInstaller(): ?InstallerInterface
     {
         return $this->container->get(WorkflowGuiInstaller::class);
     }
